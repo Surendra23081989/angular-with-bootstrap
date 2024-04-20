@@ -1,0 +1,102 @@
+<!-- Page Wrapper -->
+<div id="wrapper">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">First Name</th>
+        <th scope="col">City</th>
+        <th scope="col">Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let author of authors" appHighlighted>
+        <th scope="row">{{ author.id }}</th>
+        <td>{{ author.firstName | uppercase}}</td>
+        <td>{{ author.city }}</td>
+        <td>{{ author.address }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Sidebar -->
+  <app-sidebar></app-sidebar>
+  <!-- End of Sidebar -->
+  <!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column">
+    <!-- Main Content -->
+    <div id="content">
+      <!-- Topbar -->
+      <app-topbar></app-topbar>
+      <!-- End of Topbar -->
+      <!-- Begin Page Content -->
+      <div class="container-fluid">
+        <!-- Page Heading Start -->
+        <app-heading></app-heading>
+        <!-- Page Heading End -->
+        <!-- Content Row -->
+        <div class="row">
+          <!-- Earnings (Monthly) Card Example -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <app-monthly-card></app-monthly-card>
+          </div>
+          <!-- Earnings (Annually) Card Example -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <app-annualy-card></app-annualy-card>
+          </div>
+          <!-- Earnings (Tasks) Card Example -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <app-task-card></app-task-card>
+          </div>
+          <!-- Pending Requests Card Example -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <app-pending-request-card></app-pending-request-card>
+          </div>
+        </div>
+        <!-- Content Row -->
+        <div class="row">
+          <!-- Area Chart -->
+          <div class="col-xl-8 col-lg-7">
+            <app-area-chart></app-area-chart>
+          </div>
+          <!-- Pie Chart -->
+          <div class="col-xl-4 col-lg-5">
+            <app-pie-chart></app-pie-chart>
+          </div>
+        </div>
+        <!-- Content Row -->
+        <div class="row">
+          <!-- Content Column -->
+          <div class="col-lg-6 mb-4">
+            <app-projects></app-projects>
+          </div>
+          <div class="col-lg-6 mb-4">
+            <app-illustrations></app-illustrations>
+          </div>
+        </div>
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- End of Main Content -->
+    <!-- Footer Start-->
+    <app-footer></app-footer>
+    <!-- End of Footer -->
+  </div>
+  <!-- End of Content Wrapper -->
+</div>
+<!-- End of Page Wrapper -->
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+  <i class="fas fa-angle-up"></i>
+</a>
+<!-- Logout Modal-->
+<div
+  class="modal fade"
+  id="logoutModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <app-logout-modal></app-logout-modal>
+</div>
+<router-outlet></router-outlet>
