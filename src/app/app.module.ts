@@ -23,6 +23,7 @@ import { ColorSystemComponent } from './projects/color-system/color-system.compo
 import { ShowByNamePipe } from './show-by-name.pipe';
 import { HighlightedDirective } from './highlighted.directive';
 import { HttpClientModule } from '@angular/common/http';
+import { AuthorGridComponent } from './author-grid/author-grid.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { HttpClientModule } from '@angular/common/http';
     ColorSystemComponent,
     ShowByNamePipe,
     HighlightedDirective,
+    AuthorGridComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

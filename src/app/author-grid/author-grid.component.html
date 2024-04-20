@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">First Name</th>
+        <th scope="col">City</th>
+        <th scope="col">Address</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let author of authors" appHighlighted>
+        <th scope="row">{{ author.id }}</th>
+        <td>{{ author.firstName | uppercase}}</td>
+        <td>{{ author.city }}</td>
+        <td>{{ author.address }}</td>
+      </tr>
+    </tbody>
+  </table>

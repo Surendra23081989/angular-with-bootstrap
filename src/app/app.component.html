@@ -1,23 +1,5 @@
 <!-- Page Wrapper -->
 <div id="wrapper">
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col">Id</th>
-        <th scope="col">First Name</th>
-        <th scope="col">City</th>
-        <th scope="col">Address</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let author of authors" appHighlighted>
-        <th scope="row">{{ author.id }}</th>
-        <td>{{ author.firstName | uppercase}}</td>
-        <td>{{ author.city }}</td>
-        <td>{{ author.address }}</td>
-      </tr>
-    </tbody>
-  </table>
   <!-- Sidebar -->
   <app-sidebar></app-sidebar>
   <!-- End of Sidebar -->
@@ -54,14 +36,17 @@
         </div>
         <!-- Content Row -->
         <div class="row">
+          <div class="col">
+            <app-author-grid></app-author-grid>
+          </div>
           <!-- Area Chart -->
-          <div class="col-xl-8 col-lg-7">
+          <!-- <div class="col-xl-8 col-lg-7">
             <app-area-chart></app-area-chart>
-          </div>
+          </div> -->
           <!-- Pie Chart -->
-          <div class="col-xl-4 col-lg-5">
+          <!-- <div class="col-xl-4 col-lg-5">
             <app-pie-chart></app-pie-chart>
-          </div>
+          </div> -->
         </div>
         <!-- Content Row -->
         <div class="row">

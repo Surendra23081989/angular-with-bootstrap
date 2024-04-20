@@ -8,10 +8,12 @@ export class HighlightedDirective {
 
   @HostListener('mouseenter')
   addColor() {
-    this.elementRef.nativeElement.style.backgroundColor = 'yellow';
+    this.elementRef.nativeElement.style.backgroundColor = 'orange';
+    this.elementRef.nativeElement.style.color = '#ffffff';
   }
   @HostListener('mouseleave')
   removeColor() {
-    this.elementRef.nativeElement.style.backgroundColor = '';
+    this.elementRef.nativeElement.style.backgroundColor = '#ffffff';
+    this.elementRef.nativeElement.style.color = '#000000';
   }
 }
