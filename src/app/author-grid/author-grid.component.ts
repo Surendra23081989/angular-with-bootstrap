@@ -11,7 +11,7 @@ export class AuthorGridComponent {
   authors: Author[] = [];
   ngOnInit(): void {
     this.autherService.getAuthors().subscribe((result) => {
-      this.authors = result.slice(0, 10);
+      this.authors = result;
     });
   }
 }
