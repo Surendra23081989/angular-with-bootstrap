@@ -24,6 +24,19 @@ import { ShowByNamePipe } from './show-by-name.pipe';
 import { HighlightedDirective } from './highlighted.directive';
 import { HttpClientModule } from '@angular/common/http';
 import { AuthorGridComponent } from './author-grid/author-grid.component';
+import { FormsComponent } from './forms/forms.component';
+import { FormsModule } from '@angular/forms';
+import { ButtonsComponent } from './buttons/buttons.component';
+import { CardsComponent } from './cards/cards.component';
+import { ColorsComponent } from './colors/colors.component';
+import { BordersComponent } from './borders/borders.component';
+import { AnimationsComponent } from './animations/animations.component';
+import { OthersComponent } from './others/others.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { ForgotComponent } from './forgot/forgot.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { BlankPageComponent } from './blank-page/blank-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,8 +60,20 @@ import { AuthorGridComponent } from './author-grid/author-grid.component';
     ShowByNamePipe,
     HighlightedDirective,
     AuthorGridComponent,
+    FormsComponent,
+    ButtonsComponent,
+    CardsComponent,
+    ColorsComponent,
+    BordersComponent,
+    AnimationsComponent,
+    OthersComponent,
+    LoginComponent,
+    RegisterComponent,
+    ForgotComponent,
+    NotFoundComponent,
+    BlankPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
