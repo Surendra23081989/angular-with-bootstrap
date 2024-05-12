@@ -10,9 +10,13 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ForgotComponent } from './forgot/forgot.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { BlankPageComponent } from './blank-page/blank-page.component';
+import { TablesComponent } from './tables/tables.component';
+import { ChartsComponent } from './charts/charts.component';
 
 const routes: Routes = [
-  {path:'', component:ButtonsComponent},
+  {path:'', component:DashboardComponent},
   {path:'buttons', component:ButtonsComponent},
   {path:'cards', component:CardsComponent},
   {path:'colors', component:ColorsComponent},
@@ -22,6 +26,9 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'register', component:RegisterComponent},
   {path:'forgot-password', component:ForgotComponent},
+  {path:'blank-page', component:BlankPageComponent},
+  {path:'tables', component:TablesComponent},
+  {path:'charts', component:ChartsComponent},
   {path:'**', component:NotFoundComponent},
 ];
 

@@ -5,7 +5,7 @@
   <!-- Sidebar - Brand -->
   <a
     class="sidebar-brand d-flex align-items-center justify-content-center"
-    href="index.html"
+    routerLink="/"
   >
     <div class="sidebar-brand-icon rotate-n-15">
       <i class="fas fa-laugh-wink"></i>
@@ -20,7 +20,7 @@
 
   <!-- Nav Item - Dashboard -->
   <li class="nav-item active">
-    <a class="nav-link" href="index.html">
+    <a class="nav-link" routerLink="/">
       <i class="fas fa-fw fa-tachometer-alt"></i>
       <span>Dashboard</span></a
     >
@@ -130,20 +130,39 @@
     >
       <div class="bg-white py-2 collapse-inner rounded">
         <h6 class="collapse-header">Login Screens:</h6>
-        <a class="collapse-item" routerLink="login" routerLinkActive="active">Login</a>
-        <a class="collapse-item" routerLink="register" routerLinkActive="active">Register</a>
-        <a class="collapse-item" routerLink="forgot-password" routerLinkActive="active">Forgot Password</a>
+        <a class="collapse-item" routerLink="login" routerLinkActive="active"
+          >Login</a
+        >
+        <a class="collapse-item" routerLink="register" routerLinkActive="active"
+          >Register</a
+        >
+        <a
+          class="collapse-item"
+          routerLink="forgot-password"
+          routerLinkActive="active"
+          >Forgot Password</a
+        >
         <div class="collapse-divider"></div>
         <h6 class="collapse-header">Other Pages:</h6>
-        <a class="collapse-item" routerLink="not-found" routerLinkActive="active">404 Page</a>
-        <a class="collapse-item" routerLink="blank-page" routerLinkActive="active">Blank Page</a>
+        <a
+          class="collapse-item"
+          routerLink="not-found"
+          routerLinkActive="active"
+          >404 Page</a
+        >
+        <a
+          class="collapse-item"
+          routerLink="blank-page"
+          routerLinkActive="active"
+          >Blank Page</a
+        >
       </div>
     </div>
   </li>
 
   <!-- Nav Item - Charts -->
   <li class="nav-item">
-    <a class="nav-link" href="charts.html">
+    <a class="nav-link" routerLink="charts" routerLinkActive="active">
       <i class="fas fa-fw fa-chart-area"></i>
       <span>Charts</span></a
     >
@@ -151,7 +170,7 @@
 
   <!-- Nav Item - Tables -->
   <li class="nav-item">
-    <a class="nav-link" href="tables.html">
+    <a class="nav-link" routerLink="tables" routerLinkActive="active">
       <i class="fas fa-fw fa-table"></i>
       <span>Tables</span></a
     >
