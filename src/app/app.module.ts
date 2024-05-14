@@ -38,7 +38,6 @@ import { ForgotComponent } from './forgot/forgot.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { BlankPageComponent } from './blank-page/blank-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { TablesComponent } from './tables/tables.component';
 import { ChartsComponent } from './charts/charts.component';
 @NgModule({
   declarations: [
@@ -76,7 +75,6 @@ import { ChartsComponent } from './charts/charts.component';
     NotFoundComponent,
     BlankPageComponent,
     DashboardComponent,
-    TablesComponent,
     ChartsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
