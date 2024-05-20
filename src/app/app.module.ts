@@ -27,7 +27,6 @@ import { AuthorGridComponent } from './author-grid/author-grid.component';
 import { FormsComponent } from './forms/forms.component';
 import { FormsModule } from '@angular/forms';
 import { ButtonsComponent } from './buttons/buttons.component';
-import { CardsComponent } from './cards/cards.component';
 import { ColorsComponent } from './colors/colors.component';
 import { BordersComponent } from './borders/borders.component';
 import { AnimationsComponent } from './animations/animations.component';
@@ -63,8 +62,7 @@ import { ChartsComponent } from './charts/charts.component';
     HighlightedDirective,
     AuthorGridComponent,
     FormsComponent,
-    ButtonsComponent,
-    CardsComponent,
+    ButtonsComponent,    
     ColorsComponent,
     BordersComponent,
     AnimationsComponent,
