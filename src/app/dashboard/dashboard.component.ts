@@ -10,11 +10,12 @@ export class DashboardComponent implements OnInit {
 /**
  *
  */
-constructor(private router:ActivatedRoute) {
-  
-  
+constructor(private route:ActivatedRoute) {
+    
 }
   ngOnInit(): void {
-    
+    this.route.data.subscribe(data =>{
+      console.log(data)
+    });
   }
 }

@@ -5,17 +5,29 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { authGuard } from './auth.guard';
+import { deactivateGuard } from './deactivate.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
-  { path: 'dashboard', component: DashboardComponent, data:{name:'Surendra'}},
-  { path: 'buttons', component: ButtonsComponent,
-    children:[
-      {path:'login',component:LoginComponent},
-      {path:'register', component:RegisterComponent}
-    ]
-   },
-  { path: 'cards', loadChildren: () => import('./cards/cards.module').then(m => m.CardsModule) },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    data: { name: 'Surendra' },
+  },
+  {
+    path: 'buttons',canActivate:[authGuard],canDeactivate:[deactivateGuard],
+    component: ButtonsComponent,
+    children: [
+      { path: 'login', component: LoginComponent },
+      { path: 'register/:city/:country', component: RegisterComponent },
+    ],
+  },
+  {
+    path: 'cards',
+    loadChildren: () =>
+      import('./cards/cards.module').then((m) => m.CardsModule),
+  },
 
   { path: '**', component: NotFoundComponent },
 ];
